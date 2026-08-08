@@ -53,7 +53,7 @@ undefined
 → HTTP (HyperText Transfer Protocol) is the foundation of web communication.  
 * It defines how messages are formatted and transmitted between clients and servers. Every time you visit a website, HTTP is working.  
 
-#### 🔄 HTTP Request–Response Flow
+####  HTTP Request–Response Flow:
 
 | Step | Phase | Key Actions & Components |
 |:---:|:---|:---|
@@ -91,3 +91,79 @@ undefined
 **5. Client receives and displays**
 *   **Parsing:** The browser builds the DOM (Document Object Model).
 *   **Rendering:** The browser's engine draws the page and executes client-side JavaScript.
+
+#### HTTP Methods:
+
+→ HTTP methods define what action the client wants the server to perform on a resource.
+
+| Method | Purpose | Has Body? | Idempotent? | Example Use |
+| :--- | :--- | :--- | :--- | :--- |
+| **GET** | Retrieve data | No | Yes | Fetch user list |
+| **POST** | Create a new resource | Yes | No | Register a user |
+| **PUT** | Replace entire resource | Yes | Yes | Update full profile |
+| **PATCH** | Partially update a resource | Yes | Yes | Change only email |
+| **DELETE** | Remove a resource | No | Yes | Delete a post |
+| **HEAD** | Like GET but no response body | No | Yes | Check if file exists |
+| **OPTIONS** | Describe available methods (CORS) | No | Yes | CORS preflight check |
+
+### HTTP Status Codes:
+* HTTP Status Codes are 3-digit numbers sent by the server to tell the client whether the request was successful or not.
+* They're essential for error handling.
+
+#### 📊 Status Code Categories:
+
+| Range | Type | Meaning |
+|:---|:---|:---|
+| **1xx** | Informational | Request received; continuing process. |
+| **2xx** | Success | Action successfully received and accepted. |
+| **3xx** | Redirection | Further action needed to complete request. |
+| **4xx** | Client Error | Request contains bad syntax or is invalid. |
+| **5xx** | Server Error | Server failed to fulfill a valid request. |
+
+#### 🛠️ Common Status Codes:
+
+| Code | Status | Description |
+|:---|:---|:---|
+| **100** | Continue | Initial part of request received; client can continue. |
+| **200** | OK | Request was successful. |
+| **201** | Created | A new resource was successfully created. |
+| **204** | No Content | Request successful, but no content to return. |
+| **301** | Moved Permanently | Resource has permanently moved to a new URL. |
+| **302** | Found (Temporary) | Resource is temporarily at a different URL. |
+| **400** | Bad Request | Request is invalid or malformed. |
+| **401** | Unauthorized | Authentication is required or has failed (Who are you?). |
+| **403** | Forbidden | Server understands but refuses to authorize access (What can you do?). |
+| **404** | Not Found | Requested resource could not be found. |
+| **409** | Conflict | Request conflicts with current state of the server. |
+| **429** | Too Many Requests | Client has sent too many requests (Rate Limiting). |
+| **500** | Internal Server Error | Server encountered an unexpected condition. |
+| **502** | Bad Gateway | Invalid response from an upstream server. |
+| **503** | Service Unavailable | Server is overloaded or down for maintenance. |
+| **504** | Gateway Timeout | Upstream server failed to send a timely response. |
+
+
+#### HTTP Headers:
+→ They are key-value pairs carrying metadata about the request or response. They tell the server and client extra information beyond just the data.
+
+Imagine you are sending a courier parcel:  
+The parcel contains your gift (the main data), but there is also a label attached with:
+* Sender Name
+* Receiver Address
+* Fragile
+* Weight
+
+These labels don’t change the gift, but they tell the courier how to handle it.  
+HTTP Headers work exactly like these labels. ⇒ They carry extra information about the request or response.
+
+#### HTTP Headers Flow : 
+**Request Headers (Client → Server)**  
+* User-Agent → Identifies the browser  
+* Authorization → Authentication/token  
+* Accept → Data type the client wants  
+
+**Response Headers (Server → Client)**
+* Set-Cookie → Stores cookies  
+* Cache-Control → Controls caching  
+* Server → Server information  
+
+---
