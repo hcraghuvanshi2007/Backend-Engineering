@@ -167,3 +167,72 @@ HTTP Headers work exactly like these labels. ⇒ They carry extra information ab
 * Server → Server information  
 
 ---
+
+#### → Running JavaScript with Node.js:  
+
+````// hello.js
+console.log('Hello, Node.js!');
+
+// Using a variable
+const name = 'Web Development II';
+console.log(`Welcome to ${name}`);
+
+// Simple function
+function greet(studentName) {
+return `Hello, ${studentName}! Ready to learn Node.js?`;
+}
+
+console.log(greet('Alice'));
+
+// Run it:
+// node hello.js
+````
+---
+
+### What is NPM?  
+**NPM (Node Package Manager)** is the world's largest _**software library**_ for JavaScript.  
+It lets you install, manage, and share reusable code packages (libraries).  
+There are 2M+ packages available  
+**It helps developers:**
+
+1. Install packages
+2. Update packages
+3. Remove packages
+4. Share their own packages
+
+**Simple Definition:**  
+NPM is a tool used to install and manage JavaScript packages.
+
+### Why NPM Matters ??
+
+**Use Case :**  
+Without npm, you'd code everything from scratch. npm gives you instant access to libraries solving every problem imaginable  
+
+**Real-World Example :**  
+* Express (50M+ downloads/week) = web server in one command.
+* Mongoose = database toolkit.
+* Axios = HTTP requests. All instantly available via npm
+---
+#### NPM Registry — What is it?
+* The npm registry is a public online database of JavaScript packages.
+* Located at: https://www.npmjs.com
+* Anyone can publish a package to the registry.
+* Packages can be: libraries, frameworks, CLI tools, utilities.
+* Examples of popular packages:  
+
+    | Package Name | Package Use Case |
+    | :--- | :--- |
+    | **Express** | Web framework (50M+ weekly downloads) |
+    | **React** | UI library |
+    | **nodemon** | Auto-restart development tool |
+    | **mongoose** | MongoDB ODM |
+    | **dotenv** | Environment variable loader |
+
+---
+#### → Did you know that JS behaves differently in the browser and in Node.js?
+* ⇒ In chrome's console we can run window but not in node.js 
+* ⇒ _**In Node.js, there is no window or document. Why?**_
+  *  Because Node.js runs outside the browser-it doesn't deal with the DOM or browser-specific APIs.
+* ⇒ Instead, Node.js has a **_global object_**. It's equivalent of the window in the browser but designed for a server-side environment.
+
+Global Object 
