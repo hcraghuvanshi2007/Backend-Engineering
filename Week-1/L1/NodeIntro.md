@@ -235,4 +235,154 @@ Without npm, you'd code everything from scratch. npm gives you instant access to
   *  Because Node.js runs outside the browser-it doesn't deal with the DOM or browser-specific APIs.
 * ⇒ Instead, Node.js has a **_global object_**. It's equivalent of the window in the browser but designed for a server-side environment.
 
-Global Object 
+---
+### -> Global Object
+The global object is an object that is automatically available everywhere in a JavaScript environment.
+
+Think of it as:
+
+    `The top-level object that contains things provided by the JavaScript runtime.`
+
+For example, JavaScript provides functions/objects such as:  
+
+````
+setTimeout()
+console
+Math
+JSON 
+````
+Some of these are accessible through the global object.
+
+#### _1. Global Object in Browser:_
+In a browser, the global object is:  
+
+    window
+For example:
+
+    console.log(window);
+
+You can access browser-global things through window:
+
+    window.alert("Hello");
+    
+    window.setTimeout(() => {
+    console.log("Hello");
+    }, 1000);
+
+And:
+
+    console.log(window.document);
+
+because the browser provides the DOM through window
+#### _2. Global Object in Node.js:_
+
+Node.js **doesn't use window**.
+
+Instead, Node.js has:
+
+    global
+
+So:
+
+    console.log(global);
+
+will show Node's global object.
+
+You can do:
+
+    console.log(global.setTimeout);
+    console.log(global.console);
+
+Node provides things like:
+
+    global
+    ├── console
+    ├── setTimeout
+    ├── setInterval
+    ├── clearTimeout
+    ├── Buffer
+    ├── process
+    └── ...
+
+So in Node:
+
+    setTimeout(...)
+
+is available directly, but conceptually it is also associated with the Node global environment.
+
+You can write:
+
+    global.setTimeout(() => {
+    console.log("Hello");
+    }, 1000);
+
+but normally you simply write:
+
+    setTimeout(() => {
+    console.log("Hello");
+    }, 1000);
+
+### What is _globalThis_?
+JavaScript runs in different environments:
+
+    Browser       → window
+    Node.js       → global
+    Web Worker    → self
+
+Instead of remembering different names, JavaScript provides a standard universal name:
+
+    globalThis
+
+So:
+
+    console.log(globalThis);
+
+works in modern browsers and Node.js.
+
+Roughly:  
+
+    Browser
+        ↓
+    globalThis == window
+
+    Node.js
+        ↓
+    globalThis == global
+
+Therefore:
+
+    globalThis.console
+
+works in both environments.
+
+#### _-> global vs globalThis_
+
+In Node.js:
+
+    console.log(global === globalThis);
+
+Output:
+
+true
+
+In a browser:
+
+    console.log(window === globalThis);
+
+Output:
+
+true
+
+So:
+
+                 globalThis
+                    │
+          ┌─────────┴─────────┐
+          ↓                   ↓
+      Browser               Node.js
+          ↓                   ↓
+       window               global
+
+* _globalThis_ is the standard cross-environment way to refer to the global object.
+
+
