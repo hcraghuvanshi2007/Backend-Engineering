@@ -110,5 +110,59 @@ Lists all ingredients (packages) your app needs
 | **os**      | Operating system information             |
 | **dns**     | Domain name resolution                   |
 
+#### 2. _Local Modules_ — You Create Them
+* Local modules are files written inside a project, imported using a relative path — starting with ./ for the same folder, or ../ to step up into a parent folder. 
+  * That leading dot is what tells Node.js "look in my own project," as opposed to checking installed packages or core modules.  
+  Creating one starts with writing the code and deciding what to export:
 
+        // mathUtils.js
+        function validate(a, b) {
+        if (typeof a !== 'number' || typeof b !== 'number') {
+        throw new Error('Both arguments must be numbers');
+        }
+        }
+        // Public functions — these will be exported
+        function add(a, b) { validate(a, b); return a + b; }
+        function subtract(a, b) { validate(a, b); return a - b; }
+        function multiply(a, b) { validate(a, b); return a * b; }
+        function divide(a, b) {
+        if (b === 0) throw new Error('Cannot divide by zero');
+        return a / b;
+        }
+        module.exports = { add, subtract, multiply, divide };
+  Notice that validate is never included in module.exports. It still runs, and other functions in the same file can still call it, but it is completely invisible to any file that imports mathUtils — exactly the encapsulation described in  
+  Section 1. Using this module elsewhere looks like:  
 
+      // app.js
+      const math = require('./mathUtils'); // relative path
+      console.log(math.add(10, 5)); // 15
+      console.log(math.subtract(10, 5)); // 5
+      console.log(math.multiply(10, 5)); // 50
+      console.log(math.divide(10, 5)); // 2
+      // Destructuring import — pulling out only what's needed
+      const { add, multiply } = require('./mathUtils');
+      console.log(add(3, 4)); // 7
+      // Error handling
+      try {
+      console.log(math.divide(10, 0)); // throws error
+      } catch (err) {
+      console.error('Error:', err.message);
+      }
+
+#### 3. _Third-party Modules_ — Installed from NPM
+* Third-party modules are packages installed from the npm registry using npm install, and once installed, they are
+* physically stored inside the project's node_modules folder.  
+* Importing one uses exactly the same require() syntax
+* as a core module — Node.js automatically checks node_modules when it doesn't recognize a name as a core
+module and the string doesn't start with ./ or ../.  
+
+  As a working example, the chalk package adds color to terminal output:  
+
+      // terminal:
+      npm install chalk@4 // v4 uses CommonJS — matches require() syntax
+      // app.js
+      const chalk = require('chalk');
+      console.log(chalk.green('Success!'));
+      console.log(chalk.red.bold('Error!'));
+Notice the @4 pinned in the install command — this is deliberate, since newer major versions of chalk switched
+to ES Modules only (covered in Section 7), and would not work with a plain require() call.
