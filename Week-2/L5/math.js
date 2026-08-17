@@ -20,3 +20,5 @@ module.exports = {
     add1:add,
     sub1:sub
 }
+// Export Type-5
+module.exports = {add,sub}; // Easy Way
