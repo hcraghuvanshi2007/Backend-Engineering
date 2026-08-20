@@ -4,11 +4,14 @@ const fs = require("fs");
 
 // Delete a file
 
-//fs.unlinkSync("./unlink.txt");
+fs.unlinkSync("./unlink.txt");
 
 // Statistic of File
+
 console.log(fs.statSync("./test.txt"));
 console.log(fs.statSync("./test.txt").isFile());
 
 // Make a directory
-fs.mkdirSync("my-docs");
+fs.mkdirSync("/my-docs");
+
+fs.mkdirSync("my-docss/a/b", { recursive: true })
