@@ -51,5 +51,3 @@ console.log('This runs before the file is read');
 3. Uses JavaScript on both client and server
 4. Large ecosystem of packages (npm)
 
-
-heyy
