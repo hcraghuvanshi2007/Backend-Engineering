@@ -82,3 +82,4 @@ yoooo
 7. Close Callbacks
     * `socket.on('close')`
 #### Example:
+    console.log('1. Start');
