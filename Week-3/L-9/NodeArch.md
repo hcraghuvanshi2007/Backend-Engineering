@@ -67,3 +67,4 @@ yoooo
 1. Synchronous Code
 2. `process.nextTick()`
 3. Promise Microtasks
+    * `.then()`
