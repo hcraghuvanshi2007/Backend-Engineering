@@ -99,3 +99,4 @@ yoooo
     console.log('6. End');
 The output will be:
 1. Start
+6. End
