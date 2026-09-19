@@ -94,3 +94,4 @@ yoooo
     setTimeout(() => console.log('4. Timeout'), 0);
     
     // Check phase
+    setImmediate(() => console.log('5. Immediate'));
