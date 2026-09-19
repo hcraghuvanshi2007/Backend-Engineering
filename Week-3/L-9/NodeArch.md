@@ -73,3 +73,4 @@ yoooo
     * `await`
     * `queueMicrotask()`
 4. Timers
+    * `setTimeout()`
