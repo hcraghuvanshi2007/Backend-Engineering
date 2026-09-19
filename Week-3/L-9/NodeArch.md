@@ -103,3 +103,4 @@ The output will be:
 2. Next tick
 3. Promise
 4. Timeout
+5. Immediate
