@@ -63,3 +63,4 @@ Node.js follows these steps to handle operations:
 5. Process **setImmediate** callbacks
 6. Handle **close events** (like socket.on('close'))
 yoooo
+## Node.js Priority Order (Highest → Lowest)
