@@ -97,3 +97,4 @@ yoooo
     setImmediate(() => console.log('5. Immediate'));
     
     console.log('6. End');
+The output will be:
