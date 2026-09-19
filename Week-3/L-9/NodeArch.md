@@ -96,3 +96,4 @@ yoooo
     // Check phase
     setImmediate(() => console.log('5. Immediate'));
     
+    console.log('6. End');
