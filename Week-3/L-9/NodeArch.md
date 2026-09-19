@@ -93,3 +93,4 @@ yoooo
     // Timer phase
     setTimeout(() => console.log('4. Timeout'), 0);
     
+    // Check phase
