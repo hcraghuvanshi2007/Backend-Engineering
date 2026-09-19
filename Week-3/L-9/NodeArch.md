@@ -72,3 +72,4 @@ yoooo
     * `.finally()`
     * `await`
     * `queueMicrotask()`
+4. Timers
