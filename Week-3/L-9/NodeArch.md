@@ -101,3 +101,4 @@ The output will be:
 1. Start
 6. End
 2. Next tick
+3. Promise
