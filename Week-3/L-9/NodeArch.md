@@ -89,3 +89,4 @@ yoooo
     
     // Microtask queue (Promise)
     Promise.resolve().then(() => console.log('3. Promise'));
+    
