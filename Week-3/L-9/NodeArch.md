@@ -88,3 +88,4 @@ yoooo
     process.nextTick(() => console.log('2. Next tick'));
     
     // Microtask queue (Promise)
+    Promise.resolve().then(() => console.log('3. Promise'));
