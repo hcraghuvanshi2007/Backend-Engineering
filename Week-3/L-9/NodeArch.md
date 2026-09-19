@@ -85,3 +85,4 @@ yoooo
     console.log('1. Start');
     
     // Next tick queue
+    process.nextTick(() => console.log('2. Next tick'));
