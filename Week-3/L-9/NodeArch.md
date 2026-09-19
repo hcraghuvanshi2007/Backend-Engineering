@@ -86,3 +86,4 @@ yoooo
     
     // Next tick queue
     process.nextTick(() => console.log('2. Next tick'));
+    
