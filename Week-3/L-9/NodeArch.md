@@ -59,4 +59,5 @@ Node.js follows these steps to handle operations:
 1. Execute the main script (**synchronous** code)
 2. Process any **microtasks** (Promises, process.nextTick)
 3. Execute **timers** (setTimeout, setInterval)
+4. Run **I/O callbacks** (file system, network operations)
 yoooo
