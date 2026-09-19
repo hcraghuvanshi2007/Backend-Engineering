@@ -66,3 +66,4 @@ yoooo
 ## Node.js Priority Order (Highest → Lowest)
 1. Synchronous Code
 2. `process.nextTick()`
+3. Promise Microtasks
