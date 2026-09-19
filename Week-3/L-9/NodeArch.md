@@ -102,3 +102,4 @@ The output will be:
 6. End
 2. Next tick
 3. Promise
+4. Timeout
