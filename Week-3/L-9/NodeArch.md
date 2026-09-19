@@ -56,4 +56,5 @@ The event loop is what makes Node.js non-blocking and efficient.
 #### How the Event Loop Works?
 Node.js follows these steps to handle operations:
 
+1. Execute the main script (**synchronous** code)
 yoooo
