@@ -70,3 +70,4 @@ yoooo
     * `.then()`
     * `.catch()`
     * `.finally()`
+    * `await`
