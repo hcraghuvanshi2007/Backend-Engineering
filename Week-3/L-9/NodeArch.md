@@ -71,3 +71,4 @@ yoooo
     * `.catch()`
     * `.finally()`
     * `await`
+    * `queueMicrotask()`
