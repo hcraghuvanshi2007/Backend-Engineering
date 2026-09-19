@@ -68,3 +68,4 @@ yoooo
 2. `process.nextTick()`
 3. Promise Microtasks
     * `.then()`
+    * `.catch()`
