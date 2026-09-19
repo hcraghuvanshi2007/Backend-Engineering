@@ -69,3 +69,4 @@ yoooo
 3. Promise Microtasks
     * `.then()`
     * `.catch()`
+    * `.finally()`
