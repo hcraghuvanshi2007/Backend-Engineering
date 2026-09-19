@@ -80,3 +80,4 @@ yoooo
     * Network
 6. `setImmediate()`
 7. Close Callbacks
+    * `socket.on('close')`
