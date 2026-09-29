@@ -79,6 +79,7 @@ Node.js follows these steps to handle operations:
     * `.finally()`
 
     * `await`
+
     * `queueMicrotask()`
 4. Timers
     * `setTimeout()`
