@@ -85,6 +85,7 @@ Node.js follows these steps to handle operations:
 4. Timers
 
     * `setTimeout()`
+
     * `setInterval()`
 5. I/O Callbacks
     * File System
