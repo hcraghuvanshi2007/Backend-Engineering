@@ -69,6 +69,7 @@ Node.js follows these steps to handle operations:
 1. Synchronous Code
 
 2. `process.nextTick()`
+
 3. Promise Microtasks
     * `.then()`
     * `.catch()`
