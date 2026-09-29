@@ -107,3 +107,4 @@ The output will be:
 5. Immediate
 * Start (1)
 * End (6)
+* Next tick (2)
