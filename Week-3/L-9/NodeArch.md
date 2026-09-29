@@ -114,3 +114,4 @@ The output will be:
 ---
 ### So we now that thread pool handles a fix no. tasks at once!!!
 ```json lines
+Default Thread Pool Size => 4
