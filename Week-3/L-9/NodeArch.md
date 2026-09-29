@@ -99,6 +99,7 @@ Node.js follows these steps to handle operations:
 7. Close Callbacks
 
     * `socket.on('close')`
+
 #### Example:
     console.log('1. Start');
     
