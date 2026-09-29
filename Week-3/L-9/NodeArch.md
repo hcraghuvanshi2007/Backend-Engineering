@@ -105,3 +105,4 @@ The output will be:
 3. Promise
 4. Timeout
 5. Immediate
+* Start (1)
