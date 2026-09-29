@@ -119,12 +119,7 @@ Node.js follows these steps to handle operations:
     console.log('6. End');
 
 The output will be:
-1. Start
-6. End
-2. Next tick
-3. Promise
-4. Timeout
-5. Immediate
+
 * Start (1)
 * End (6)
 * Next tick (2)
