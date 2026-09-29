@@ -83,6 +83,7 @@ Node.js follows these steps to handle operations:
     * `queueMicrotask()`
 
 4. Timers
+
     * `setTimeout()`
     * `setInterval()`
 5. I/O Callbacks
