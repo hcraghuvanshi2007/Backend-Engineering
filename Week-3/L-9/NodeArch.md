@@ -109,3 +109,4 @@ The output will be:
 * End (6)
 * Next tick (2)
 * Promise(3)
+* Timeout (4)
