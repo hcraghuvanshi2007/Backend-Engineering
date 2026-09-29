@@ -95,6 +95,7 @@ Node.js follows these steps to handle operations:
     * Network
 
 6. `setImmediate()`
+
 7. Close Callbacks
     * `socket.on('close')`
 #### Example:
