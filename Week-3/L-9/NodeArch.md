@@ -116,3 +116,4 @@ The output will be:
 ```json lines
 Default Thread Pool Size => 4
 ```
+#### **_Qn. Can we increase it ??_**  
