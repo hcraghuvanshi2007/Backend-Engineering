@@ -121,3 +121,4 @@ Default Thread Pool Size => 4
 ```json lines
 Max Thread Pool Size => It depends on machine to machine (the server which we r buying or rentout) - how many CPU Cores are present in it. 
 ```
+Refer to Thread pool file in this folder for more info...
