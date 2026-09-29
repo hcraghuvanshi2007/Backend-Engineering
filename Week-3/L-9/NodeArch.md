@@ -63,6 +63,7 @@ Node.js follows these steps to handle operations:
 5. Process **setImmediate** callbacks
 6. Handle **close events** (like socket.on('close'))
 yoooo
+### Node.js Priority Order (Highest → Lowest)
 ## Node.js Priority Order (Highest → Lowest)
 1. Synchronous Code
 2. `process.nextTick()`
