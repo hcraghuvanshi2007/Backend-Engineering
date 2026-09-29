@@ -119,3 +119,4 @@ Default Thread Pool Size => 4
 #### **_Qn. Can we increase it ??_**  
 => _**YES**_
 ```json lines
+Max Thread Pool Size => It depends on machine to machine (the server which we r buying or rentout) - how many CPU Cores are present in it. 
