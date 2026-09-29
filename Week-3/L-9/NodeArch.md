@@ -101,6 +101,7 @@ Node.js follows these steps to handle operations:
     * `socket.on('close')`
 
 #### Example:
+
     console.log('1. Start');
     
     // Next tick queue
