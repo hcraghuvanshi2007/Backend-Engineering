@@ -89,6 +89,7 @@ Node.js follows these steps to handle operations:
     * `setInterval()`
 
 5. I/O Callbacks
+
     * File System
     * Network
 6. `setImmediate()`
