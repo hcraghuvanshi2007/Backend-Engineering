@@ -126,6 +126,7 @@ The output will be:
 * Promise(3)
 * Timeout (4)
 * Immediate (5)
+
 ---
 ### So we now that thread pool handles a fix no. tasks at once!!!
 ```json lines
