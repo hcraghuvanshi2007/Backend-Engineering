@@ -117,6 +117,7 @@ Node.js follows these steps to handle operations:
     setImmediate(() => console.log('5. Immediate'));
     
     console.log('6. End');
+
 The output will be:
 1. Start
 6. End
