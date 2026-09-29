@@ -108,3 +108,4 @@ The output will be:
 * Start (1)
 * End (6)
 * Next tick (2)
+* Promise(3)
