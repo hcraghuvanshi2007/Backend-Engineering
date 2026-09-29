@@ -111,3 +111,4 @@ The output will be:
 * Promise(3)
 * Timeout (4)
 * Immediate (5)
+---
