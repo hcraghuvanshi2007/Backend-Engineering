@@ -75,6 +75,7 @@ Node.js follows these steps to handle operations:
     * `.then()`
 
     * `.catch()`
+
     * `.finally()`
     * `await`
     * `queueMicrotask()`
