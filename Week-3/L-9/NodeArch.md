@@ -73,6 +73,7 @@ Node.js follows these steps to handle operations:
 3. Promise Microtasks
 
     * `.then()`
+
     * `.catch()`
     * `.finally()`
     * `await`
