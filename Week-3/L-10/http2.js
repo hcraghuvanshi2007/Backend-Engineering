@@ -5,3 +5,4 @@ const myServer = http.createServer((req, res) => {
     fs.appendFile("log.txt", log, (err, data) => {
         res.end("Hello From Server");
     })
+});
